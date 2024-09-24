@@ -480,8 +480,6 @@ class MultiTaskModel(WavLMPreTrainedModel):
         attention_mask: Optional[torch.Tensor] = None,
         vattention_mask: Optional[torch.Tensor] = None,
         emo_label: Optional[torch.Tensor] = None,
-        gen_label: Optional[torch.Tensor] = None,
-        spk_label: Optional[torch.Tensor] = None,
         output_attentions: Optional[bool] = None,
         output_hidden_states: Optional[bool] = None,
         return_dict: Optional[bool] = None):
@@ -510,8 +508,6 @@ class MultiTaskModel(WavLMPreTrainedModel):
         sim_v2a = video_avc @ audio_avc_all.T / self.temp
 
         emo_label = emo_label.view(-1, 1)
-        spk_label = spk_label.view(-1, 1)
-        gen_label = gen_label.view(-1, 1)
         
         emo_label_all = concat_all_gather(emo_label)
 
