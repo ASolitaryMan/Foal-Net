@@ -57,7 +57,7 @@ If some are missing, please refer to [requirements.yml](requirements.ylm) for mo
 ## 📍 Data Preparation
 1. You should prepare training source, such as train.scp, valid.scp.
 
-    Specifically, the format of `*.csv` file is typically like this:
+    Specifically, the format of `*.scp` file is typically like this:
 
     ```
     wave_index1 dataset_root/audio_1 label_1
