@@ -69,7 +69,7 @@ def train_model(accelerator, model, cls_loss, dataloader, lr_scheduler=None, opt
             optimizer.zero_grad()
             cls_output, loss_avc, loss_itm = model(input_values=input_values, attention_mask=attention_mask, vinput_values=vinput_values, vattention_mask=vattention_mask, emo_label=emo_labels)
             c_loss = cls_loss(cls_output, emo_labels)
-            loss = c_loss + loss_avc + loss_itm
+            loss = c_loss + loss_avc + 0.1 * loss_itm
             # loss = c_loss
             accelerator.backward(loss)
             optimizer.step()
