@@ -102,8 +102,8 @@ def train_model(accelerator, model, cls_loss, dataloader, lr_scheduler=None, opt
     save_results['Train_cls'] = batch_losses_cls / len(dataloader)
     save_results['Train_avc'] = batch_losses_avc / len(dataloader)
     save_results['Train_avm'] = batch_losses_itm / len(dataloader)
-    save_results['Train-UA'] = emo_accuracy
-    save_results['Train-WA'] = emo_ua
+    save_results['Train-UA'] = emo_ua
+    save_results['Train-WA'] = emo_accuracy
     
 
     return save_results
@@ -154,8 +154,8 @@ def eval_model(accelerator, model, cls_loss, eval_loader):
     save_results['Valid_cls'] = batch_losses_cls / len(eval_loader)
     save_results['Valid_avc'] = batch_losses_avc / len(eval_loader)
     save_results['Valid_avm'] = batch_losses_itm / len(eval_loader)
-    save_results['Valid-UA'] = emo_accuracy
-    save_results['Valid-WA'] = emo_ua
+    save_results['Valid-UA'] = emo_ua
+    save_results['Valid-WA'] = emo_accuracy
 
     return save_results
 
