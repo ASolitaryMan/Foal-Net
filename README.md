@@ -97,5 +97,13 @@ Thanks for the efforts of all the authors..
 If you think this project is helpful, please feel free to leave a star⭐️ and cite our paper:
 
 ```
-Li, Q., Gao, Y., Wen, Y., Wang, C., Li, Y. (2024) Enhancing Modal Fusion by Alignment and Label Matching for Multimodal Emotion Recognition. Proc. Interspeech 2024, 4663-4667, doi: 10.21437/Interspeech.2024-1462
+@inproceedings{li24z_interspeech,
+  title     = {Enhancing Modal Fusion by Alignment and Label Matching for Multimodal Emotion Recognition},
+  author    = {Qifei Li and Yingming Gao and Yuhua Wen and Cong Wang and Ya Li},
+  year      = {2024},
+  booktitle = {Interspeech 2024},
+  pages     = {4663--4667},
+  doi       = {10.21437/Interspeech.2024-1462},
+  issn      = {2958-1796},
+}
 ```
