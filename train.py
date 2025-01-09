@@ -199,11 +199,11 @@ if __name__ == "__main__":
     parser.add_argument('--dropout', type=float, default=0.3, metavar='dropout', help='dropout rate')
     parser.add_argument('--batch_size', type=int, default=16, metavar='BS', help='batch size')
     parser.add_argument('--num_workers', type=int, default=0, metavar='nw', help='number of workers')
-    parser.add_argument('--epochs', type=int, default=30, metavar='E', help='number of epochs')
+    parser.add_argument('--epochs', type=int, default=40, metavar='E', help='number of epochs')
     parser.add_argument('--seed', type=int, default=1234, help='make split manner is same with same seed')
     parser.add_argument('--fp16', type=bool, default=True, help='whether to use fp16')
     parser.add_argument('--gradient_accumulation_steps', type=int, default=1, help='gradient_accumulation_steps')
-    parser.add_argument('--max_length', type=int, default=14, help='max length of audio')
+    parser.add_argument('--max_length', type=int, default=6, help='max length of audio')
 
     parser.add_argument('--train_src', type=str, default="/home/lqf/workspace/icassp2023/session5_train.scp", help='the path of train_src')
     parser.add_argument('--valid_src', type=str, default="/home/lqf/workspace/icassp2023/session5_valid.scp", help='the path of valid_src')

@@ -41,7 +41,7 @@ Main prerequisites:
 * `soundfile`
 * `librosa`
 
-If some are missing, please refer to [requirements.yml](requirements.ylm) for more details.
+If some are missing, please refer to [requirements.yml](./requirements.yml) for more details.
 
 
 ## ➡️ File Description
